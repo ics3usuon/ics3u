@@ -1,0 +1,61 @@
+h1{font-family:fantasy;
+    font-size: 20;
+    background-color: aquamarine}
+h2{font-family: monospace;
+font-size: 20;
+background-color: aquamarine}
+b{background-color: #66ccff}
+h3{text-align: center;
+border: 20px ridge #0099cc ;
+background-color:  #66ccff}
+.column1 {
+float: left;
+width: 33.333333%;}
+h4{color:darkorange;
+background-color: chocolate}
+h6{color:chocolate;
+font-size: 60}
+h5{font-size: 20}
+pl{background-color: aquamarine;
+font-size: 18}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
